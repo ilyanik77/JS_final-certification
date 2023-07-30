@@ -119,3 +119,16 @@ const sortProducts2 = products2.sort((a, b) => {
 );
 console.log(sortProducts2);
 
+
+//Задание 5.
+//Дано 2 массива, необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями. 
+
+
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+        
+const obj = {};
+for (let i = 0; i < en.length; i++) {
+    obj[en[i]] = ru[i];
+}
+console.log(obj);
